@@ -4,6 +4,7 @@ from dash import Dash, dcc, html, callback, Output, Input
 stail=['https://codepen.io/chriddyp/pen/bWLwgP.css']
 #initialise app and incoporate css
 app=Dash(__name__,external_stylesheets=stail)
+server=app.server
 
 #define app layout
 app.layout=html.Div([
